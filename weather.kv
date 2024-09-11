@@ -1,0 +1,162 @@
+<Weather>:		
+    BoxLayout:
+        orientation: "horizontal"
+        size: 1024, 682
+        BoxLayout:
+            orientation: "vertical"
+            spacing: 10 
+            padding: 0, 0, 0, 0
+            BoxLayout:
+                orientation: "vertical"
+                spacing: -100
+                # City name
+                Label:
+                    id: city
+                    font_size: 125
+                    markup: True
+                    #size_hint: None, None
+                    #size: 10, 10
+                    #pos_hint: {'center_x':.12, 'center_y':.9}
+            
+              # Month and day
+                Label:
+                    id: curr_month
+                    font_size: 60
+                    markup: True
+                    #size_hint: None, None
+                    #size: 10, 10
+                    #pos_hint: {'center_x':.11, 'center_y':.75}
+        
+            # Day
+            #Label:
+                #id: curr_day
+                #font_size: 40
+                #markup: True
+                #size_hint: None, None
+                #size: 10, 10
+                #pos_hint: {'center_x':.23, 'center_y':.75}
+        
+            ## Day of Week
+            #Label: 
+                #id: curr_day_of_week
+                #font_size: 40
+                #markup: True
+                ##size_hint: None, None
+                ##size: 10, 10
+                ##pos_hint: {'center_x':.11, 'center_y':.65}
+        
+            BoxLayout:
+                orientation: "vertical"
+                spacing: -100
+                # Current Temperature
+                Label:
+                    id: curr_temp
+                    font_size: 185
+                    markup: True
+                    #size_hint: 1, 1
+                    #size: 10, 10
+                    #pos_hint: {'center_x':.35, 'center_y':.45}
+            
+                # Feels like
+                Label:
+                    id: flike
+                    font_size: 60
+                    markup: True
+                    #size_hint: 1, 2
+                    #size: 10, 10
+                    #pos_hint: {'center_x': .35, 'center_y':.22}
+
+        BoxLayout:
+            orientation: "vertical"
+            padding: 0, 0, 0, 100
+            Image:
+                id: weather_image
+                source: "./icons/error.png"
+                #size_hint: None, None
+                #size: 350, 250
+                #pos_hint: {'center_x':.5, 'center_y':1}
+        
+            # Current Weather
+            Label:
+                id: curr_weather
+                font_size: 60
+                markup: True
+                size_hint: None, None
+                size: 10, 100
+                pos_hint: {'center_x':.5, 'center_y':.75}
+
+        BoxLayout:
+            orientation: "vertical"
+            padding: 0, 0, 0, 75
+            BoxLayout: 
+                orientation: "vertical"
+                spacing: -50
+                # Wind Direction
+                Label:
+                    id: id_wind 
+                    font_size: 40
+                    markup: True
+                    size_hint: None, None
+                    size: 10, 100
+                    pos_hint: {'center_x':.5, 'center_y':.75}
+    
+                # Wind Speed and Gust
+                Label:
+                    id: id_wind_speed 
+                    font_size: 30 
+                    markup: True
+                    size_hint: None, None
+                    size: 10, 100
+                    pos_hint: {'center_x':.5, 'center_y':.75}
+
+            BoxLayout:
+                orientation: "vertical"
+                spacing: -50
+                # Visibility
+                Label:
+                    id: id_visibility 
+                    font_size: 40
+                    markup: True
+                    size_hint: None, None
+                    size: 10, 100
+                    pos_hint: {'center_x':.5, 'center_y':.75}
+    
+                # Pressure
+                Label:
+                    id: id_pressure
+                    font_size: 40
+                    markup: True
+                    size_hint: None, None
+                    size: 10, 100
+                    pos_hint: {'center_x':.5, 'center_y':.75}
+    
+                # Humidity
+                Label:
+                    id: id_humidity
+                    font_size: 40
+                    markup: True
+                    size_hint: None, None
+                    size: 10, 100
+                    pos_hint: {'center_x':.5, 'center_y':.75}
+
+            BoxLayout:
+                orientation: "vertical"
+                spacing: -50
+                # Sunrise
+                Label:
+                    id: id_sunrise
+                    font_size: 40
+                    markup: True
+                    size_hint: None, None
+                    size: 10, 100
+                    pos_hint: {'center_x':.5, 'center_y':.75}
+    
+                  # Sunset
+                Label:
+                    id: id_sunset
+                    font_size: 40
+                    markup: True
+                    size_hint: None, None
+                    size: 10, 100
+                    pos_hint: {'center_x':.5, 'center_y':.75}
+
