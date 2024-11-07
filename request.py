@@ -17,3 +17,4 @@ def weather_request(self):
     if response.status_code == 200:
         weather_data = response.json()
     else:
+        show_error(response.status_code)
