@@ -11,8 +11,8 @@ class Adapter():
         self._weather_data = model
 
         response = self._api_request()
-        if response:
-            self._filter_response(response)
+        if response.status_code == 200:
+            self._filter_response(response.json())
         else:
             self._error_app("Error fetching data")
         print(">>> Adapter initialized")
